@@ -38,6 +38,6 @@ end
 # Define your play method below
 def play(board)
   until board.all? {|spot| position_taken?(spot)}
-    turn
+    turn(board)
   end
 end
