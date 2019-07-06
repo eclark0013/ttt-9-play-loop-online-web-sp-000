@@ -37,7 +37,7 @@ end
 
 # Define your play method below
 def play(board)
-  until board.all? {|spot| position_taken?(spot)}
+  until board.all? {|spot| position_taken?(board, spot)}
     turn(board)
   end
 end
