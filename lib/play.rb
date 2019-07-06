@@ -37,7 +37,5 @@ end
 
 # Define your play method below
 def play(board)
-  while board.any? {|spot| position_taken?(board, spot)}
-    turn(board)
-  end
+  9.times do turn(board)
 end
