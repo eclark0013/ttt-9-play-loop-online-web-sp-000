@@ -36,7 +36,7 @@ def turn(board)
 end
 
 # Define your play method below
-def play
+def play(board)
   until board.all? {|spot| position_taken?(spot)}
     turn
   end
